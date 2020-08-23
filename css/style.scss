@@ -1,3 +1,27 @@
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+@font-face {
+   src: url(/fonts/RussoOne-Regular.ttf); 
+   font-family: russ;
+}
+
+$light-blue: #87e7eeea;
+$dark-blue:rgba(42, 29, 235, 0.467);
+$white: #eee;
+
+html {
+    height : 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color:$light-blue;
+}
+
+#btn{
+    background: $dark-blue;
+    height: 45px;
+    min-width: width 90px;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    font-size: 35px;
+    font-family: russ;
+
 }
