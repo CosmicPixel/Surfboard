@@ -1,0 +1,9 @@
+#OS Junk Files
+[Tt]humbs.db
+*.OS_Store
+
+#sass Junk File
+css\style.css.map
+css/style.css.map
+*.css.map
+style.css.map
