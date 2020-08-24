@@ -1,0 +1,54 @@
+@font-face {
+  src: url(/fonts/RussoOne-Regular.ttf);
+  font-family: russ; }
+
+html {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #87e7eeea; }
+
+#btn {
+  background: rgba(42, 29, 235, 0.467);
+  height: 45px;
+  min-width: width 90px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 35px;
+  font-family: russ;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-left: 15px; }
+
+#btn #circle {
+  height: 5px;
+  width: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 50ms; }
+
+#btn:hover #circle {
+  height: 50px;
+  width: 100px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px;
+  color: black; }
+
+#input {
+  background: #222;
+  height: 45px;
+  width: 190px;
+  border: none;
+  border-radius: 10px; }
