@@ -27,28 +27,12 @@ html {
   padding-top: 5px;
   padding-left: 15px; }
 
-#btn #circle {
-  height: 5px;
-  width: 5px;
-  background: transparent;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  overflow: hidden;
-  transition: 50ms; }
-
 #btn:hover #circle {
   height: 50px;
   width: 100px;
   left: 0;
   border-radius: 0;
-  border-bottom: 2px;
-  color: black; }
+  border-bottom: 2px; }
 
 #input {
-  background: #222;
-  height: 45px;
-  width: 190px;
-  border: none;
-  border-radius: 10px; }
+  background: #eee; }
