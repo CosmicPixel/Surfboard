@@ -8,6 +8,11 @@ html {
   justify-content: center;
   background-color: #87e7eeea; }
 
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
 #logo {
   height: 400px;
   background: transparent;
@@ -56,7 +61,7 @@ html {
   border-bottom: 2px;
   color: red; }
 
-#input {
+#search {
   background: #eee;
   height: 45px;
   width: 600px;
