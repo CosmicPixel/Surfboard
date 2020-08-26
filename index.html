@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboard</title>
+    <link rel="shortcut icon" href="#" />
+    <script defer src = "js\main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav>
+        <ul class="nav">
+                <li> <a href="login.html"> Login</a></li>
+                <li> <a href ="signup.html">Sign Up</a></li>
     <img href src = "surfboard logo.png" id="logo">
 
     <link rel ="stylesheet" href="css\style.css">
-    <script defer src = "js\main.js"></script>
 </head>
 
-<div>
-                <input type = "text"  id= "input" placeholder="SURF IMAGE"/>
-                <div id ="btn" onclick = "sendApiRequest()">
-                <span class = "noselect" >SEARCH</span>
-                <div id="circle" ></div>
-
-        </div>
-    </div>
-    </div>
-      
-
-</body>
-</html>
+<div id="buttons"></div>
+<div class="search-bar">
+    <input type="text" name="query" id="search" placeholder="SURF IMAGE"/>
+    <input id="btn" type="button" onclick="search()" value="Submit" class="btn"/>
+    <div id="img"></div>
+</div>
+</div>
