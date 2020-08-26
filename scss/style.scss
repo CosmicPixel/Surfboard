@@ -1,0 +1,80 @@
+@font-face {
+    src: url(/fonts/RussoOne-Regular.ttf);
+    font-family: russ; }
+  
+  html {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #87e7eeea; }
+
+
+  nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #logo{
+      height:400px;
+      background:transparent;
+      position: relative;left:440px; top:10px;
+     
+      
+  
+    }
+  
+  #btn {
+    background: rgba(42, 29, 235, 0.467);
+    height: 35px;
+    min-width:.5px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 22px;
+    font-family: russ;
+    position: relative;left:400px; top:.5px;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    align-items: baseline;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+   }
+  
+  #btn #circle {
+    height: 5px;
+    width: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 50ms; }
+  
+  #btn:hover #circle {
+    height: 50px;
+    width: 100px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px;
+    color: red; }
+  
+  #search {
+    background: #eee;
+    height: 45px;
+    width: 600px;
+    border: none;
+    position:relative; left:400px; top:2px;
+    border-radius: 10px; 
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  
+  }
+  
+  
