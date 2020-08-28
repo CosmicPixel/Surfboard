@@ -2,6 +2,10 @@
   src: url(/fonts/RussoOne-Regular.ttf);
   font-family: russ; }
 
+  @media only screen and (max-device-width: 320px) {
+
+  }
+
   @viewport{
     zoom: 1.0;
     width: extend-to-zoom;}
