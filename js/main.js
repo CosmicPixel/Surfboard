@@ -1,29 +1,19 @@
-$(document).ready(()=>{ 
 
-
-    var userInput= document.getElementById("input").value
-    console.log(userInput)
-    var giphyApiKey = oECEbvJh3Q3KBv6UiSycVPH7HgVlEG5B
-    var giphyApiUrl = 'https://api.giphy.com/v1/gifs/search?q=${userInput}&rating=g&api_key=${giphyApiKey}'
-
-
-    fetch(giphyApiUrl).then(function(res) {
-        return res.json()
-    })
-    .then(function(json) {
-        console.log(json.data[0].images.fixed_height.url)
-        var imgPath =json.data[0].images.fixed_height.url
-        var img = document.createElement("img")
-        img.setAttribute("src", imgPath)
-        document.body.appendChild(img)
-
-        })
+    function search()
+    {
+    
+        var input = $('#search').val();
+        $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=oECEbvJh3Q3KBv6UiSycVPH7HgVlEG5B&limit=5', function(response) {
+            for(var i =0; i < response.data.length; i++)
+            {
+            $('#img').append("<img src="+ response.data[i].images.downsized_large.url + ">");
             
-        
-    }).catch(function(error) {
-        console.log(error.message)
+            }
 
+
+            
+
+            
     })
-})
-
+    }
 
